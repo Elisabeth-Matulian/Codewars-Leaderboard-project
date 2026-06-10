@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codewars leaderboard</title>
 </head>
-<body>
 
+<body>
+    <header>
+        <h1>Codewars leaderboard</h1>
+    </header>
+    <main>
+        <form>
+            <label for="username_input">Enter your username:
+                <input type="text" id="username_input" placeholder="comma separated usernames">
+            </label>
+            <button id="submit_button">Submit</button>
+        </form>
+        <div id="language_selector"></div>
+        <div id="results_table"></div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Codewars leaderboard. All rights reserved.</p>
+    </footer>
+    <script src="index.mjs" type="module"></script>
 </body>
 
-<script src="index.mjs" type="module"></script>
 </html>
