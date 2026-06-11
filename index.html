@@ -12,20 +12,23 @@
         <h1>Codewars leaderboard</h1>
     </header>
     <main>
-        <div id="error_message"></div>
         <form>
             <label for="username_input">Enter your username:
-                <input type="text" id="username_input" placeholder="comma separated usernames">
+                <input type="text" id="username_input" placeholder="e.g. user1, user2">
             </label>
             <button id="submit_button">Submit</button>
         </form>
-        <select id="language_selector">
-            <option>Languages</option>
-        </select>
+        <div id="error_message"></div>
+        <label for="language_selector">
+            Select a language
+            <select id="language_selector">
+                <option>Languages</option>
+            </select>
+        </label>
         <div id="results_table"></div>
     </main>
     <footer>
-        <p>&copy; 2026 Codewars leaderboard. All rights reserved.</p>
+        <p>&copy; 2026 Codewars leaderboard.</p>
     </footer>
     <script src="index.mjs" type="module"></script>
 </body>
