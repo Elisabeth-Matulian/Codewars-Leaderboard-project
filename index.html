@@ -12,13 +12,16 @@
         <h1>Codewars leaderboard</h1>
     </header>
     <main>
+        <div id="error_message"></div>
         <form>
             <label for="username_input">Enter your username:
                 <input type="text" id="username_input" placeholder="comma separated usernames">
             </label>
             <button id="submit_button">Submit</button>
         </form>
-        <div id="language_selector"></div>
+        <select id="language_selector">
+            <option>Languages</option>
+        </select>
         <div id="results_table"></div>
     </main>
     <footer>
