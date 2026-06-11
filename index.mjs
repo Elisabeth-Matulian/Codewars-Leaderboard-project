@@ -13,7 +13,7 @@ const resultsTable = document.getElementById("results_table");
 async function loadUsersData(usersId) {
   try {
     errorMessage.textContent = "";
-    const inputtedUsers = usersId.split(",").map((user) => user.trim());
+    const inputtedUsers = usersId.split(",").map((user) => user.trim()).filter((user) => user !== "");
     usersData = await Promise.all(
       inputtedUsers.map((user) =>
         fetch(`https://www.codewars.com/api/v1/users/${user}`).then(
